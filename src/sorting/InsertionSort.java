@@ -27,17 +27,28 @@ public class InsertionSort {
 
 	//Method for insertion sort
 	public static void insertionSort(int arr[]) {
- 		for (int i = 1; i < arr.length; ++i) { 
+		for (int i = 1; i < arr.length; ++i) { 
+			/**
+			 * Taking the value as Key
+			 * Same location value as Iteration number 
+			 */
 			int key = arr[i]; 
+			
+			/**
+			 * Position to start comparing 
+			 */
 			int j = i - 1; 
 
-			/* Move elements of arr[0..i-1], that are 
-	               greater than key, to one position ahead 
-	               of their current position */
+			/**
+			 * compare the key value from previous postion 
+			 * (By going back 1 place at a time)
+			 * and updating previous position value by swapping 
+			 */
 			while (j >= 0 && arr[j] > key) { 
 				arr[j + 1] = arr[j]; 
 				j = j - 1; 
 			} 
+			//Insertion of value at correct Place
 			arr[j + 1] = key; 
 		} 
 	}
