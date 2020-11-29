@@ -36,19 +36,20 @@ public class SelectionSort {
 	}
 
 	//Method for selection sort
-	public static int[] selectionSort(int arr[]) {
+	public static void selectionSort(int arr[]) {
 		for(int i=0;i<arr.length-1;i++) { 
 			int min=i;
+			//to find the minimum value
 			for(int j=i+1;j<arr.length;j++) {
 				if(arr[j]<arr[min]) {
 					min=j;
 				}
 			} 
+			//Swapping the min value to the position
 			int temp= arr[i];
 			arr[i]=arr[min];
 			arr[min]=temp;
 		}
-		return arr;
 	}
 
 }
