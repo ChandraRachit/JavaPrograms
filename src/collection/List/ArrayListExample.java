@@ -2,7 +2,17 @@ package collection.List;
 
 import java.util.ArrayList;
 import java.util.Iterator;
-
+/**
+ * like an array, but there is no size limit
+ * contain duplicate elements
+ * maintains insertion order
+ * non synchronized
+ * allows random access because array works at the index basis
+ * manipulation is little bit slower than the LinkedList in Java 
+ * because a lot of shifting needs to occur if any element is removed from the array list
+ * @author Rachit
+ *
+ */
 public class ArrayListExample {
 	public static void main(String args[]) {
 		ArrayList<String> al=new ArrayList<String>();

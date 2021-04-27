@@ -23,7 +23,7 @@ $$$$$
 4444
 55555
 */
-public class StarPattern1 {
+public class StarPattern_1 {
 
 	public static void main(String args[]) {
 		System.out.println("Enter the Pattern Height");

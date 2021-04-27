@@ -9,7 +9,6 @@ public class DuplicateInString {
 		findDuplicate("RakeshRaushan");
 		findDuplicate("RachitRaunak");
 		findDuplicate("Modi");
-		String[] a= {"A","C"};
 	}
 
 	static void findDuplicate(String str) {
