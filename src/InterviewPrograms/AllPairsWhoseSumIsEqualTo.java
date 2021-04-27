@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class AllPairsWhoseSumIsEqualTo {
 	public static void main(String args[]) {
 		findThePair(new int[] {1,2,3,4,5,6,7},8);
-		findPair(new int[] {1,2,3,4,5,6,9},8);
+		findPair(new int[] {1,2,3,4,5,6,7},8);
 	}
 	
 	static void findThePair(int a[],int sum) {
@@ -18,6 +18,12 @@ public class AllPairsWhoseSumIsEqualTo {
 			}
 		}
 	}
+	
+	/**
+	 * Program with different logic
+	 * @param a
+	 * @param sum
+	 */
 	static void findPair(int a[],int sum) {
 		Arrays.sort(a);
 		int i=0;

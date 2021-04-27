@@ -2,7 +2,7 @@ package Patterns;
 
 import java.util.Scanner;
 
-public class StarPattern3 {
+public class StarPattern_3 {
 
 	public static void main(String args[]) {
 		System.out.println("Enter the Pattern Height");
